@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="BetaConf|Win32">
+      <Configuration>BetaConf</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="BetaConf|x64">
+      <Configuration>BetaConf</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{499784D2-7EA3-4CBE-BD93-EC0DBBC42FCD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BadManPublic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;D:\ProgrammeX\Dxx\Lib\x64;$(ProjectDir)minhook;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\ProgrammeX\Dxx\Include;$(ProjectDir)include\glm;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;$(ProjectDir)minhook;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include\glm</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;$(ProjectDir)minhook;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include\glm</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BadMan_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BadMan_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BadMan_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
+    <Link />
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>_WINDLL;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_BETA;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+    <None Include="packages.config" />
+    <None Include="resources\coolroblox.json" />
+    <None Include="resources\Steve.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\block.3dobj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap1.bmp" />
+    <Image Include="icon1.ico" />
+    <Image Include="resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BadMan.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BadMan\Command\CommandMgr.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\BindCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\BruhCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\CommandBlockExploitCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\DemiGodPot.cpp" />
+	<ClCompile Include="BadMan\Command\Commands\IDinfoCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\SummonMob.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\KitCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ConfigCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\CoordsCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\DamageCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\DupeCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\EjectCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\EnchantCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ExecuteCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\FriendListCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\GameModeCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\GiveCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\HelpCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\HideCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ICommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ModulesCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\NameSpoofCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\NbtCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\PanicCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\PathCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\PlayerTeleportCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\RelativeTeleportCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\SayCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ScriptCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ServerCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\setoffhandCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\SetprefixCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\SpammerCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\TeleportCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\TestCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\ToggleCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\TopCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\UnbindCommand.cpp" />
+    <ClCompile Include="BadMan\Command\Commands\WaypointCommand.cpp" />
+    <ClCompile Include="BadMan\Config\ConfigManager.cpp" />
+    <ClCompile Include="BadMan\DrawUtils.cpp" />
+    <ClCompile Include="BadMan\FriendList\FriendList.cpp" />
+    <ClCompile Include="BadMan\GuiUtils.cpp" />
+    <ClCompile Include="BadMan\ImmediateGui.cpp" />
+    <ClCompile Include="BadMan\Loader.cpp" />
+    <ClCompile Include="BadMan\Menu\ClickGui.cpp" />
+    <ClCompile Include="BadMan\Menu\TabGui.cpp" />
+    <ClCompile Include="BadMan\Module\ModuleManager.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\CustomSky.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\AntiAnvil.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ShulkerExploit.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\NoEntityTrace.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\NoEntityRender.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\AltTheme.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\Background.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ElytraFly.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\NoMiningTrace.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\AutoEz.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\DvdLogo.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\surround.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\AntiHunger.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\cps.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\fps.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Aimbot.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\AutoTrap.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\CrystalAuraOW.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\Auto32k.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\TPAura.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AirJump.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AirStuck.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AirSwim.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AntiBot.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ForceTotem.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AntiImmobile.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AntiVoid.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AutoArmor.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AutoClicker.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AutoGapple.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AutoSneak.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AutoSprint.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\AutoTotem.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\R9J9ServerFly.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Bhop.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Bps.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Blink.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\BowAimbot.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\ChestAura.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\ChestESP.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\InventoryView.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\SessionInfo.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\ChestStealer.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\ClickGuiMod.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Compass.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Crasher.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Criticals.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\CrystalAura.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\CubeGlide.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Derp.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\EditionFaker.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\ESP.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\FastEast.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\FastLadder.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Fly.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\DeathCoords.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\FollowPathModule.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Freecam.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Freelook.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Fucker.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\FullBright.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Glide.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Godmode.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\HighJump.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Hitbox.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\HudModule.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\ExtendedBlockReach.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\InfiniteReach.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\InstaBreak.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\InventoryCleaner.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\InventoryMove.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\JavascriptModule.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Jesus.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Jetpack.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Killaura.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\MidClick.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Module.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NameTags.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Nbt.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NukkitNoFall.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoFall.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NightMode.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoFriends.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoHurtcam.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoPacket.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoPaintingCrash.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoSlowDown.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoSwing.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoWeb.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Nuker.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\PacketLogger.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Phase.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Radar.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Reach.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Scaffold.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Spammer.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Speed.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Spider.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\StackableItem.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Step.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Targethud.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Teams.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Teleport.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\TestModule.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Timer.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\TimeChanger.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Tower.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Tracer.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\TriggerBot.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\VanillaPlus.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Velocity.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Waypoints.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Xray.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Zoom.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Announcer.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\BlockEsp.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\CreativeFly.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\CrystalAuraWTA.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\CubeFly.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\CubeSpeed.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Excavator.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\InsideAura.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\LongJump.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\MineplexBP.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\MineplexFly.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\NoClip.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Placer.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\SignFucker.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\Twerk.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\selectionHighlight.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\HudEditor.cpp" />
+    <ClCompile Include="BadMan\Module\Modules\BoatSpeed.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\RiptideFly.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\CrosshairPlus.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ViewModel.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\FastPlace.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\Welcome.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\KeyStrokes.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ArrayList.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\PlayerList.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\WaterMark.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ArmourHud.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\Coordinates.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ServerInfo.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\LogMessage.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\pvpResources.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\EntityFly.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\ReverseStep.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\EndermanLook.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\autoWalk.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\Breadcrums.cpp" />
+	<ClCompile Include="BadMan\Module\Modules\Themer.cpp" />
+    <ClCompile Include="BadMan\path\goals\JoeGoal.cpp" />
+    <ClCompile Include="BadMan\path\goals\JoeGoalXYZ.cpp" />
+    <ClCompile Include="BadMan\path\goals\JoeGoalXZ.cpp" />
+    <ClCompile Include="BadMan\path\goals\JoeGoalY.cpp" />
+    <ClCompile Include="BadMan\path\JoeConstants.cpp" />
+    <ClCompile Include="BadMan\path\JoeMovementController.cpp" />
+    <ClCompile Include="BadMan\path\JoePath.cpp" />
+    <ClCompile Include="BadMan\path\JoePathFinder.cpp" />
+    <ClCompile Include="BadMan\path\JoeSegment.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\CommandManagerFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\DrawFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\EntityFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\GameFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\GlobalFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\BadManFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\LevelFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\LocalPlayerFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\ModuleManagerFunctions.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\Vector3Functions.cpp" />
+    <ClCompile Include="BadMan\Scripting\JsScriptModule.cpp" />
+    <ClCompile Include="BadMan\Scripting\ScriptInstance.cpp" />
+    <ClCompile Include="BadMan\Scripting\ScriptManager.cpp" />
+    <ClCompile Include="BadMan\Scripting\Functions\Vector2Functions.cpp" />
+    <ClCompile Include="Memory\GameData.cpp" />
+    <ClCompile Include="Memory\Hooks.cpp" />
+    <ClCompile Include="Memory\SlimMem.cpp" />
+    <ClCompile Include="SDK\CBlockLegacy.cpp" />
+    <ClCompile Include="SDK\CCamera.cpp" />
+    <ClCompile Include="SDK\CChestBlockActor.cpp" />
+    <ClCompile Include="SDK\CClientInstance.cpp" />
+    <ClCompile Include="SDK\CComplexInventoryTransaction.cpp" />
+    <ClCompile Include="SDK\CEntity.cpp" />
+    <ClCompile Include="SDK\CGameMode.cpp" />
+    <ClCompile Include="SDK\CInventory.cpp" />
+    <ClCompile Include="SDK\CInventoryTransaction.cpp" />
+    <ClCompile Include="SDK\CItem.cpp" />
+    <ClCompile Include="SDK\CMinecraftUIRenderContext.cpp" />
+    <ClCompile Include="SDK\CMoveInputHandler.cpp" />
+    <ClCompile Include="SDK\CPacket.cpp" />
+    <ClCompile Include="SDK\MatrixStack.cpp" />
+    <ClCompile Include="SDK\Tag.cpp" />
+    <ClCompile Include="SDK\Tessellator.cpp" />
+    <ClCompile Include="SDK\TextHolder.cpp" />
+    <ClCompile Include="Utils\Logger.cpp" />
+    <ClCompile Include="Utils\SkinUtil.cpp" />
+    <ClCompile Include="Utils\Target.cpp" />
+    <ClCompile Include="Utils\TextFormat.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="Utils\VoxelIntersector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BadMan\Command\CommandMgr.h" />
+    <ClInclude Include="BadMan\Command\Commands\BindCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\BruhCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\CommandBlockExploitCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\DemiGodPot.h" />
+	<ClInclude Include="BadMan\Command\Commands\IDinfoCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\SummonMob.h" />
+    <ClInclude Include="BadMan\Command\Commands\KitCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ConfigCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\CoordsCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\DamageCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\DupeCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\EjectCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\EnchantCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ExecuteCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\FriendListCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\GameModeCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\GiveCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\HelpCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\HideCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ICommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ModulesCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\NameSpoofCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\NbtCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\PanicCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\PathCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\PlayerTeleportCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\RelativeTeleportCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\SayCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ScriptCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ServerCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\setoffhandCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\SetprefixCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\SpammerCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\TeleportCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\TestCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\ToggleCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\TopCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\UnbindCommand.h" />
+    <ClInclude Include="BadMan\Command\Commands\WaypointCommand.h" />
+    <ClInclude Include="BadMan\Config\ConfigManager.h" />
+    <ClInclude Include="BadMan\DrawUtils.h" />
+    <ClInclude Include="BadMan\FriendList\FriendList.h" />
+    <ClInclude Include="BadMan\GuiUtils.h" />
+    <ClInclude Include="BadMan\ImmediateGui.h" />
+    <ClInclude Include="BadMan\Loader.h" />
+    <ClInclude Include="BadMan\Menu\ClickGui.h" />
+    <ClInclude Include="BadMan\Menu\TabGui.h" />
+    <ClInclude Include="BadMan\Module\ModuleManager.h" />
+    <ClInclude Include="BadMan\Module\Modules\Aimbot.h" />
+	<ClInclude Include="BadMan\Module\Modules\ShulkerExploit.h" />
+	<ClInclude Include="BadMan\Module\Modules\AntiAnvil.h" />
+	<ClInclude Include="BadMan\Module\Modules\AltTheme.h" />
+	<ClInclude Include="BadMan\Module\Modules\Background.h" />
+	<ClInclude Include="BadMan\Module\Modules\surround.h" />
+	<ClInclude Include="BadMan\Module\Modules\NoEntityRender.h" />
+	<ClInclude Include="BadMan\Module\Modules\NoEntityTrace.h" />
+	<ClInclude Include="BadMan\Module\Modules\ElytraFly.h" />
+	<ClInclude Include="BadMan\Module\Modules\AutoTrap.h" />
+	<ClInclude Include="BadMan\Module\Modules\AutoEz.h" />
+	<ClInclude Include="BadMan\Module\Modules\AntiHunger.h" />
+	<ClInclude Include="BadMan\Module\Modules\DvdLogo.h" />
+	<ClInclude Include="BadMan\Module\Modules\NoMiningTrace.h" />
+	<ClInclude Include="BadMan\Module\Modules\InventoryView.h" />
+	<ClInclude Include="BadMan\Module\Modules\CrystalAuraOW.h" />
+	<ClInclude Include="BadMan\Module\Modules\TPAura.h" />
+    <ClInclude Include="BadMan\Module\Modules\AirJump.h" />
+    <ClInclude Include="BadMan\Module\Modules\AirStuck.h" />
+    <ClInclude Include="BadMan\Module\Modules\AirSwim.h" />
+	<ClInclude Include="BadMan\Module\Modules\cps.h" />
+	<ClInclude Include="BadMan\Module\Modules\fps.h" />
+    <ClInclude Include="BadMan\Module\Modules\AntiBot.h" />
+    <ClInclude Include="BadMan\Module\Modules\AntiImmobile.h" />
+    <ClInclude Include="BadMan\Module\Modules\AntiVoid.h" />
+    <ClInclude Include="BadMan\Module\Modules\AutoArmor.h" />
+    <ClInclude Include="BadMan\Module\Modules\AutoClicker.h" />
+    <ClInclude Include="BadMan\Module\Modules\AutoGapple.h" />
+    <ClInclude Include="BadMan\Module\Modules\AutoSneak.h" />
+    <ClInclude Include="BadMan\Module\Modules\AutoSprint.h" />
+    <ClInclude Include="BadMan\Module\Modules\AutoTotem.h" />
+    <ClInclude Include="BadMan\Module\Modules\Bhop.h" />
+    <ClInclude Include="BadMan\Module\Modules\Bps.h" />
+	<ClInclude Include="BadMan\Module\Modules\ForceTotem.h" />
+    <ClInclude Include="BadMan\Module\Modules\Blink.h" />
+    <ClInclude Include="BadMan\Module\Modules\BowAimbot.h" />
+    <ClInclude Include="BadMan\Module\Modules\ChestAura.h" />
+    <ClInclude Include="BadMan\Module\Modules\ChestESP.h" />
+    <ClInclude Include="BadMan\Module\Modules\ChestStealer.h" />
+    <ClInclude Include="BadMan\Module\Modules\ClickGuiMod.h" />
+    <ClInclude Include="BadMan\Module\Modules\Compass.h" />
+    <ClInclude Include="BadMan\Module\Modules\Crasher.h" />
+    <ClInclude Include="BadMan\Module\Modules\Criticals.h" />
+    <ClInclude Include="BadMan\Module\Modules\CrystalAura.h" />
+    <ClInclude Include="BadMan\Module\Modules\CubeGlide.h" />
+    <ClInclude Include="BadMan\Module\Modules\Derp.h" />
+    <ClInclude Include="BadMan\Module\Modules\EditionFaker.h" />
+    <ClInclude Include="BadMan\Module\Modules\ESP.h" />
+    <ClInclude Include="BadMan\Module\Modules\FastEat.h" />
+    <ClInclude Include="BadMan\Module\Modules\FastLadder.h" />
+    <ClInclude Include="BadMan\Module\Modules\Fly.h" />
+	<ClInclude Include="BadMan\Module\Modules\SessionInfo.h" />
+	<ClInclude Include="BadMan\Module\Modules\CrosshairPlus.h" />
+	<ClInclude Include="BadMan\Module\Modules\DeathCoords.h" />
+    <ClInclude Include="BadMan\Module\Modules\FollowPathModule.h" />
+    <ClInclude Include="BadMan\Module\Modules\Freecam.h" />
+    <ClInclude Include="BadMan\Module\Modules\Freelook.h" />
+	<ClInclude Include="BadMan\Module\Modules\Auto32k.h" />
+    <ClInclude Include="BadMan\Module\Modules\Fucker.h" />
+    <ClInclude Include="BadMan\Module\Modules\FullBright.h" />
+    <ClInclude Include="BadMan\Module\Modules\Glide.h" />
+    <ClInclude Include="BadMan\Module\Modules\Godmode.h" />
+    <ClInclude Include="BadMan\Module\Modules\HighJump.h" />
+    <ClInclude Include="BadMan\Module\Modules\Hitbox.h" />
+    <ClInclude Include="BadMan\Module\Modules\HudModule.h" />
+    <ClInclude Include="BadMan\Module\Modules\ExtendedBlockReach.h" />
+    <ClInclude Include="BadMan\Module\Modules\InfiniteReach.h" />
+    <ClInclude Include="BadMan\Module\Modules\InstaBreak.h" />
+    <ClInclude Include="BadMan\Module\Modules\InventoryCleaner.h" />
+    <ClInclude Include="BadMan\Module\Modules\InventoryMove.h" />
+    <ClInclude Include="BadMan\Module\Modules\JavascriptModule.h" />
+    <ClInclude Include="BadMan\Module\Modules\Jesus.h" />
+    <ClInclude Include="BadMan\Module\Modules\Jetpack.h" />
+    <ClInclude Include="BadMan\Module\Modules\Killaura.h" />
+    <ClInclude Include="BadMan\Module\Modules\MidClick.h" />
+    <ClInclude Include="BadMan\Module\Modules\Module.h" />
+    <ClInclude Include="BadMan\Module\Modules\NameTags.h" />
+    <ClInclude Include="BadMan\Module\Modules\Nbt.h" />
+    <ClInclude Include="BadMan\Module\Modules\NightMode.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoFall.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoFriends.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoHurtcam.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoPacket.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoPaintingCrash.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoSlowDown.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoSwing.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoWeb.h" />
+    <ClInclude Include="BadMan\Module\Modules\Nuker.h" />
+    <ClInclude Include="BadMan\Module\Modules\PacketLogger.h" />
+    <ClInclude Include="BadMan\Module\Modules\Phase.h" />
+    <ClInclude Include="BadMan\Module\Modules\Radar.h" />
+	<ClInclude Include="BadMan\Module\Modules\CustomSky.h" />
+    <ClInclude Include="BadMan\Module\Modules\Reach.h" />
+    <ClInclude Include="BadMan\Module\Modules\Scaffold.h" />
+	<ClInclude Include="BadMan\Module\Modules\R9J9ServerFly.h" />
+    <ClInclude Include="BadMan\Module\Modules\Spammer.h" />
+    <ClInclude Include="BadMan\Module\Modules\Speed.h" />
+    <ClInclude Include="BadMan\Module\Modules\Spider.h" />
+    <ClInclude Include="BadMan\Module\Modules\StackableItem.h" />
+    <ClInclude Include="BadMan\Module\Modules\Step.h" />
+    <ClInclude Include="BadMan\Module\Modules\Targethud.h" />
+    <ClInclude Include="BadMan\Module\Modules\Teams.h" />
+    <ClInclude Include="BadMan\Module\Modules\Teleport.h" />
+    <ClInclude Include="BadMan\Module\Modules\TestModule.h" />
+    <ClInclude Include="BadMan\Module\Modules\Timer.h" />
+    <ClInclude Include="BadMan\Module\Modules\TimeChanger.h" />
+    <ClInclude Include="BadMan\Module\Modules\Tower.h" />
+	<ClInclude Include="BadMan\Module\Modules\NukkitNoFall.h" />
+    <ClInclude Include="BadMan\Module\Modules\Tracer.h" />
+    <ClInclude Include="BadMan\Module\Modules\TriggerBot.h" />
+    <ClInclude Include="BadMan\Module\Modules\VanillaPlus.h" />
+    <ClInclude Include="BadMan\Module\Modules\Velocity.h" />
+    <ClInclude Include="BadMan\Module\Modules\Waypoints.h" />
+    <ClInclude Include="BadMan\Module\Modules\Xray.h" />
+    <ClInclude Include="BadMan\Module\Modules\Zoom.h" />
+    <ClInclude Include="BadMan\Module\Modules\Announcer.h" />
+    <ClInclude Include="BadMan\Module\Modules\BlockEsp.h" />
+    <ClInclude Include="BadMan\Module\Modules\CreativeFly.h" />
+    <ClInclude Include="BadMan\Module\Modules\CrystalAuraWTA.h" />
+    <ClInclude Include="BadMan\Module\Modules\CubeFly.h" />
+    <ClInclude Include="BadMan\Module\Modules\CubeSpeed.h" />
+    <ClInclude Include="BadMan\Module\Modules\Excavator.h" />
+    <ClInclude Include="BadMan\Module\Modules\InsideAura.h" />
+    <ClInclude Include="BadMan\Module\Modules\LongJump.h" />
+    <ClInclude Include="BadMan\Module\Modules\MineplexBP.h" />
+    <ClInclude Include="BadMan\Module\Modules\MineplexFly.h" />
+    <ClInclude Include="BadMan\Module\Modules\NoClip.h" />
+    <ClInclude Include="BadMan\Module\Modules\Placer.h" />
+    <ClInclude Include="BadMan\Module\Modules\SignFucker.h" />
+    <ClInclude Include="BadMan\Module\Modules\Twerk.h" />
+    <ClInclude Include="BadMan\Module\Modules\selectionHighlight.h" />
+    <ClInclude Include="BadMan\Module\Modules\HudEditor.h" />
+    <ClInclude Include="BadMan\Module\Modules\BoatSpeed.h" />
+	<ClInclude Include="BadMan\Module\Modules\ViewModel.h" />
+	<ClInclude Include="BadMan\Module\Modules\FastPlace.h" />
+	<ClInclude Include="BadMan\Module\Modules\RiptideFly.h" />
+	<ClInclude Include="BadMan\Module\Modules\Welcome.h" />
+	<ClInclude Include="BadMan\Module\Modules\KeyStrokes.h" />
+	<ClInclude Include="BadMan\Module\Modules\ArrayList.h" />
+	<ClInclude Include="BadMan\Module\Modules\PlayerList.h" />
+	<ClInclude Include="BadMan\Module\Modules\WaterMark.h" />
+	<ClInclude Include="BadMan\Module\Modules\ArmourHud.h" />
+	<ClInclude Include="BadMan\Module\Modules\Coordinates.h" />
+	<ClInclude Include="BadMan\Module\Modules\ServerInfo.h" />
+	<ClInclude Include="BadMan\Module\Modules\LogMessage.h" />
+	<ClInclude Include="BadMan\Module\Modules\pvpResources.h" />
+	<ClInclude Include="BadMan\Module\Modules\EntityFly.h" />
+	<ClInclude Include="BadMan\Module\Modules\ReverseStep.h" />
+	<ClInclude Include="BadMan\Module\Modules\EndermanLook.h" />
+	<ClInclude Include="BadMan\Module\Modules\autoWalk.h" />
+	<ClInclude Include="BadMan\Module\Modules\Breadcrums.h" />
+	<ClCompile Include="BadMan\Module\Modules\Theme.h" />
+    <ClInclude Include="BadMan\path\goals\JoeGoal.h" />
+    <ClInclude Include="BadMan\path\goals\JoeGoalXYZ.h" />
+    <ClInclude Include="BadMan\path\goals\JoeGoalXZ.h" />
+    <ClInclude Include="BadMan\path\goals\JoeGoalY.h" />
+    <ClInclude Include="BadMan\path\JoeConstants.h" />
+    <ClInclude Include="BadMan\path\JoeMovementController.h" />
+    <ClInclude Include="BadMan\path\JoePath.h" />
+    <ClInclude Include="BadMan\path\JoePathFinder.h" />
+    <ClInclude Include="BadMan\path\JoeSegment.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\CommandManagerFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\DrawFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\EntityFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\GameFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\GlobalFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\BadManFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\LevelFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\LocalPlayerFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\ModuleManagerFunctions.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\Vector3Functions.h" />
+    <ClInclude Include="BadMan\Scripting\JsScriptModule.h" />
+    <ClInclude Include="BadMan\Scripting\ScriptInstance.h" />
+    <ClInclude Include="BadMan\Scripting\ScriptManager.h" />
+    <ClInclude Include="BadMan\Scripting\Functions\Vector2Functions.h" />
+    <ClInclude Include="include\atlrx.h" />
+    <ClInclude Include="include\chakra\ChakraCommon.h" />
+    <ClInclude Include="include\chakra\ChakraCommonWindows.h" />
+    <ClInclude Include="include\chakra\ChakraCore.h" />
+    <ClInclude Include="include\chakra\ChakraCoreWindows.h" />
+    <ClInclude Include="include\chakra\ChakraDebug.h" />
+    <ClInclude Include="include\d3dx11.h" />
+    <ClInclude Include="include\d3dx11async.h" />
+    <ClInclude Include="include\d3dx11core.h" />
+    <ClInclude Include="include\d3dx11effect.h" />
+    <ClInclude Include="include\imgui\examples\imgui_impl_dx11.h" />
+    <ClInclude Include="include\imgui\examples\imgui_impl_win32.h" />
+    <ClInclude Include="include\imgui\imconfig.h" />
+    <ClInclude Include="include\imgui\imgui.h" />
+    <ClInclude Include="include\imgui\imgui_internal.h" />
+    <ClInclude Include="include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="include\imgui\imstb_textedit.h" />
+    <ClInclude Include="include\imgui\imstb_truetype.h" />
+    <ClInclude Include="include\imgui\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="include\imgui\misc\single_file\imgui_single_file.h" />
+    <ClInclude Include="include\RegExp.h" />
+    <ClInclude Include="include\StringProcess.h" />
+    <ClInclude Include="include\WinHttpClient.h" />
+    <ClInclude Include="Memory\GameData.h" />
+    <ClInclude Include="Memory\Hooks.h" />
+    <ClInclude Include="Memory\MinHook.h" />
+    <ClInclude Include="Memory\SlimMem.h" />
+    <ClInclude Include="SDK\CBlockLegacy.h" />
+    <ClInclude Include="SDK\CCamera.h" />
+    <ClInclude Include="SDK\CChestBlockActor.h" />
+    <ClInclude Include="SDK\CClientInstance.h" />
+    <ClInclude Include="SDK\CClientInstanceScreenModel.h" />
+    <ClInclude Include="SDK\CComplexInventoryTransaction.h" />
+    <ClInclude Include="SDK\CEntity.h" />
+    <ClInclude Include="SDK\CEntityList.h" />
+    <ClInclude Include="SDK\CGameMode.h" />
+    <ClInclude Include="SDK\CGameSettingsInput.h" />
+    <ClInclude Include="SDK\CHIDController.h" />
+    <ClInclude Include="SDK\CInventory.h" />
+    <ClInclude Include="SDK\CInventoryTransaction.h" />
+    <ClInclude Include="SDK\CItem.h" />
+    <ClInclude Include="SDK\CLoopbackPacketSender.h" />
+    <ClInclude Include="SDK\CMinecraftUIRenderContext.h" />
+    <ClInclude Include="SDK\CMoveInputHandler.h" />
+    <ClInclude Include="SDK\CPacket.h" />
+	<ClInclude Include="SDK\COption.h" />
+    <ClInclude Include="SDK\CRakNetInstance.h" />
+    <ClInclude Include="SDK\CUIScene.h" />
+    <ClInclude Include="SDK\MatrixStack.h" />
+    <ClInclude Include="SDK\MojangsonToken.h" />
+    <ClInclude Include="SDK\Tag.h" />
+    <ClInclude Include="SDK\Tessellator.h" />
+    <ClInclude Include="SDK\TextHolder.h" />
+    <ClInclude Include="Utils\ChakraHelper.h" />
+    <ClInclude Include="Utils\DllHelper.h" />
+    <ClInclude Include="Utils\HMath.h" />
+    <ClInclude Include="Utils\Json.hpp" />
+    <ClInclude Include="Utils\keys.h" />
+    <ClInclude Include="Utils\Logger.h" />
+    <ClInclude Include="Utils\SkinUtil.h" />
+    <ClInclude Include="Utils\Target.h" />
+    <ClInclude Include="Utils\TextFormat.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <ClInclude Include="Utils\VoxelIntersector.h" />
+    <ClInclude Include="Utils\xorstr.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.XAudio2.Redist.1.2.0\build\native\Microsoft.XAudio2.Redist.targets" Condition="Exists('packages\Microsoft.XAudio2.Redist.1.2.0\build\native\Microsoft.XAudio2.Redist.targets')" />
+    <Import Project="packages\directxtk_desktop_2017.2020.2.24.4\build\native\directxtk_desktop_2017.targets" Condition="Exists('packages\directxtk_desktop_2017.2020.2.24.4\build\native\directxtk_desktop_2017.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.XAudio2.Redist.1.2.0\build\native\Microsoft.XAudio2.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.XAudio2.Redist.1.2.0\build\native\Microsoft.XAudio2.Redist.targets'))" />
+    <Error Condition="!Exists('packages\directxtk_desktop_2017.2020.2.24.4\build\native\directxtk_desktop_2017.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\directxtk_desktop_2017.2020.2.24.4\build\native\directxtk_desktop_2017.targets'))" />
+  </Target>
+</Project>
