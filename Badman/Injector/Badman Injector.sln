@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badman Injector", "Badman Injector.csproj", "{1DBA6E10-6A05-48F0-BED9-6F33E0D3E986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DBA6E10-6A05-48F0-BED9-6F33E0D3E986}.Debug|x64.ActiveCfg = Debug|x64
+		{1DBA6E10-6A05-48F0-BED9-6F33E0D3E986}.Debug|x64.Build.0 = Debug|x64
+		{1DBA6E10-6A05-48F0-BED9-6F33E0D3E986}.Release|x64.ActiveCfg = Release|x64
+		{1DBA6E10-6A05-48F0-BED9-6F33E0D3E986}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70F39E7A-8171-4948-B18E-A51B03A58339}
+	EndGlobalSection
+EndGlobal
