@@ -1,0 +1,31 @@
+﻿
+
+LocalPlayer = "Minecraft.Windows.exe+04020228,8,18,B8,0 <-- 0 wird durch Offset ersetzt
+
+EntityList = "Minecraft.Windows.exe"+04020228,8,18,B8,378,58,0,0	<-- change the first 0 to the player index and the secend to the offset 
+
+//Offsets + LocalPlayer
+	OnGround = 1E0
+
+	Y View Angle (No Cam) = 140			//For a Freecam
+	X View Angle (No Cam) = 144
+
+	360° winkel = Minecraft.Windows.exe+35012F4
+	180° winkel = Minecraft.Windows.exe+3501270
+	Minecraft.Windows.exe+2C0E76C nope = u spin me round round bebe round round!
+
+	X Cord = 4D0
+	Y Cord = 4D4
+	Z Cord = 4D8
+
+	X Hitbox = 4EC
+	Y Hitbox = 4F0
+
+	X Vec = 50C
+	Y Vec = 510
+	Z Vec = 514
+
+	Y Cam = 26636A4
+	X Cam = 26636A0
+
+
