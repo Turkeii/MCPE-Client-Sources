@@ -3,9 +3,11 @@ Source codes of MCPE Clients!
 
     Badman (Mnigames & Anarchy)
     DaDrip (Anarchy)
-    Fadeaway (minigames)
+    Fadeaway (minigames
+	Ghost Client (Minigames & Surge's best friend)
     Lunicornia (Skidded Horion)
     Octo (shit)
+    Surge (Toxic owners, multi-purpose.)
     Packet (minigames & paying people)
     Plasmic (Legit)
     Moon (External, Blatant)
