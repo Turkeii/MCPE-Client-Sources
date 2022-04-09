@@ -1,6 +1,7 @@
 <h1 align="center">MCPE Client SRC</h1>
 <p>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Turkeii/MCPE-Client-Sources">
+<img alt="GitHub" src="https://img.shields.io/github/license/Turkeii/Horion-Clients-Sources">
 <img alt="Don't skid kids" src="https://img.shields.io/badge/Skidding-Dumb-red">
 </p>
 
