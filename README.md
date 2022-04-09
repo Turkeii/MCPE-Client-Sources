@@ -14,7 +14,7 @@ Source codes of MCPE Clients!
     Lunicornia (Skidded Horion)
     Octo (shit)
     Surge (Toxic owners, multi-purpose.)
-    Packet 1.16.201 & Packet (minigames & paying people)
+    Packet 1.16.201 & V2 (minigames & paying people)
     NG Client (NickTros's horion fork)
     Plasmic (Legit)
     Moon (External, Blatant)
