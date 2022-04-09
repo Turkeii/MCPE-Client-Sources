@@ -15,6 +15,7 @@ Source codes of MCPE Clients!
     Octo (shit)
     Surge (Toxic owners, multi-purpose.)
     Packet 1.16.201 & Packet (minigames & paying people)
+    NG Client (NickTros's horion fork)
     Plasmic (Legit)
     Moon (External, Blatant)
     Japan (Bad skid)
