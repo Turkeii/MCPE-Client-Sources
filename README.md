@@ -1,7 +1,7 @@
 <h1 align="center">MCPE Client SRC</h1>
 <p>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Turkeii/MCPE-Client-Sources">
-<img alt="GitHub" src="https://img.shields.io/github/license/Turkeii/Horion-Clients-Sources">
+<img alt="License" src="https://img.shields.io/github/license/Turkeii/Horion-Clients-Sources">
 <img alt="Don't skid kids" src="https://img.shields.io/badge/Skidding-Dumb-red">
 </p>
 
@@ -14,8 +14,7 @@ Source codes of MCPE Clients!
     Lunicornia (Skidded Horion)
     Octo (shit)
     Surge (Toxic owners, multi-purpose.)
-    Packet (minigames & paying people)
-    Packet V2 (The new Packet with his bot)
+    Packet 1.16.201 & Packet (minigames & paying people)
     Plasmic (Legit)
     Moon (External, Blatant)
     Japan (Bad skid)
