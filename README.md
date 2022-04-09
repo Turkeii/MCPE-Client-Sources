@@ -1,6 +1,8 @@
 <h1 align="center">MCPE Client SRC</h1>
-![GitHub last commit](https://img.shields.io/github/last-commit/Turkeii/MCPE-Client-Sources)
-![Don't skid kids](https://img.shields.io/badge/Skidding-Dumb-red)
+<p>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Turkeii/MCPE-Client-Sources">
+<img alt="Don't skid kids" src="https://img.shields.io/badge/Skidding-Dumb-red">
+</p>
 
 Source codes of MCPE Clients!
 
