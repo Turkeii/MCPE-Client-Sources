@@ -15,10 +15,10 @@ Source codes of MCPE Clients!
     Octo (shit)
     Surge (Toxic owners, multi-purpose.)
     Packet 1.16.201 & V2 (minigames & paying people)
-    NG Client (NickTros's horion fork)
     Plasmic (Legit)
     Moon (External, Blatant)
     Japan (Bad skid)
     Victory+ (Crappy CPVP client)
+    NG Client (NickTros's horion fork)
 # Notice
 Skidding (stealing code) is not a good thing to do. There is nothing stopping you from stealing code without crediting the original developers. But it is a very bad thing to do and you can get exposed very quickly. Some clients do not want you to steal any of there code credit or not.
