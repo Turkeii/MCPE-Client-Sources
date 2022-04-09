@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="BetaConf|Win32">
+      <Configuration>BetaConf</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="BetaConf|x64">
+      <Configuration>BetaConf</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{499784D2-7EA3-4CBE-BD93-EC0DBBC42FCD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;D:\ProgrammeX\Dxx\Lib\x64;$(ProjectDir)minhook;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\ProgrammeX\Dxx\Include;$(ProjectDir)include\glm;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;$(ProjectDir)minhook;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include\glm</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;$(ProjectDir)minhook;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include\glm</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PacketClient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PacketClient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PacketClient_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
+    <Link />
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>_WINDLL;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='BetaConf|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_BETA;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="resources\block.3dobj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PacketClient\Command\CommandMgr.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\BindCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\CommandBlockExploitCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\ConfigCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\CoordsCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\CreditCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\DamageCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\DupeCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\EjectCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\EnchantCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\FriendListCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\GameModeCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\GiveCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\HelpCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\HideCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\ICommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\IDCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\KitCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\ModulesCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\ClientNameCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\NameSpoofCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\NbtCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\PanicCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\PlayerTeleportCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\RelativeTeleportCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\SayCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\ServerCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\setoffhandCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\SetprefixCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\SpammerCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\TeleportCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\TestCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\ToggleCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\TopCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\UnbindCommand.cpp" />
+    <ClCompile Include="PacketClient\Command\Commands\WaypointCommand.cpp" />
+    <ClCompile Include="PacketClient\Config\AccountInformation.cpp" />
+    <ClCompile Include="PacketClient\Config\ConfigManager.cpp" />
+    <ClCompile Include="PacketClient\DrawUtils.cpp" />
+    <ClCompile Include="PacketClient\FriendList\FriendList.cpp" />
+    <ClCompile Include="PacketClient\GuiUtils.cpp" />
+    <ClCompile Include="PacketClient\ImmediateGui.cpp" />
+    <ClCompile Include="PacketClient\Loader.cpp" />
+    <ClCompile Include="PacketClient\Menu\ClickGui.cpp" />
+    <ClCompile Include="PacketClient\Menu\HudEditor.cpp" />
+    <ClCompile Include="PacketClient\Menu\TabGui.cpp" />
+    <ClCompile Include="PacketClient\Module\ModuleManager.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Aimbot.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Animations.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\AntiBot.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\AntiImmobile.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\AntiVoid.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\AutoClicker.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\AutoTotem.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\BlockESP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\BlockOutline.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\BreadCrumbs.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ClickTP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\CustomSky.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\FastPlace.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\FastStop.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\HackerDetector.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\HudEditorMod.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ItemTP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Jesus.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Notifications.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\PlayerList.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Sneak.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Spammer.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Speed.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Blink.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\CameraMod.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ChatBypass.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ChestAura.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ChestESP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ChestStealer.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ClickGuiMod.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Criticals.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\CrystalAura.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Derp.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Disabler.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ESP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\FreeTP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Breaker.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\FullBright.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Flight.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Hitbox.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\HiveFly.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ArrayList.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\ExtendedBlockReach.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\HudModule.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\InstaBreak.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\InvManager.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\InventoryMove.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Killaura.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\LongJump.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\MidClick.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Module.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\NameTags.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Nbt.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\NoFall.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\NoFriends.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\NoSlow.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\NoSwing.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Nuker.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\PacketLogger.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Phase.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Radar.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Reach.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Safewalk.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Scaffold.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\StackableItem.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Step.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TargetHUD.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TargetStrafeOld.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Teams.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\BlockReach.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TestModule.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Timer.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TimeChanger.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TPAura.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TriggerBot.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\VanillaPlus.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Velocity.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Watermark.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Waypoints.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\XP.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Xray.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Spider.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Packet.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\TargetStrafe.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\Switcher.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\KBFly.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\FallSave.cpp" />
+    <ClCompile Include="PacketClient\Module\Modules\NoJumpDelay.cpp" />
+    <ClCompile Include="Memory\GameData.cpp" />
+    <ClCompile Include="Memory\Hooks.cpp" />
+    <ClCompile Include="Memory\SlimMem.cpp" />
+    <ClCompile Include="SDK\CBlockLegacy.cpp" />
+    <ClCompile Include="SDK\CCamera.cpp" />
+    <ClCompile Include="SDK\CChestBlockActor.cpp" />
+    <ClCompile Include="SDK\CClientInstance.cpp" />
+    <ClCompile Include="SDK\CComplexInventoryTransaction.cpp" />
+    <ClCompile Include="SDK\CEntity.cpp" />
+    <ClCompile Include="SDK\CGameMode.cpp" />
+    <ClCompile Include="SDK\CInventory.cpp" />
+    <ClCompile Include="SDK\CInventoryTransaction.cpp" />
+    <ClCompile Include="SDK\CItem.cpp" />
+    <ClCompile Include="SDK\CMinecraftUIRenderContext.cpp" />
+    <ClCompile Include="SDK\CMoveInputHandler.cpp" />
+    <ClCompile Include="SDK\CPacket.cpp" />
+    <ClCompile Include="SDK\MatrixStack.cpp" />
+    <ClCompile Include="SDK\Tag.cpp" />
+    <ClCompile Include="SDK\Tessellator.cpp" />
+    <ClCompile Include="SDK\TextHolder.cpp" />
+    <ClCompile Include="Utils\Logger.cpp" />
+    <ClCompile Include="Utils\SkinUtil.cpp" />
+    <ClCompile Include="Utils\Target.cpp" />
+    <ClCompile Include="Utils\TextFormat.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="Utils\VoxelIntersector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PacketClient\Command\CommandMgr.h" />
+    <ClInclude Include="PacketClient\Command\Commands\BindCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\CommandBlockExploitCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\ConfigCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\CoordsCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\CreditCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\DamageCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\DupeCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\EjectCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\EnchantCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\FriendListCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\GameModeCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\GiveCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\HelpCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\HideCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\ICommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\IDCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\KitCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\ModulesCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\ClientNameCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\NameSpoofCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\NbtCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\PanicCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\PlayerTeleportCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\RelativeTeleportCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\SayCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\ServerCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\setoffhandCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\SetprefixCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\SpammerCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\TeleportCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\TestCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\ToggleCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\TopCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\UnbindCommand.h" />
+    <ClInclude Include="PacketClient\Command\Commands\WaypointCommand.h" />
+    <ClInclude Include="PacketClient\Config\AccountInformation.h" />
+    <ClInclude Include="PacketClient\Config\ConfigManager.h" />
+    <ClInclude Include="PacketClient\DrawUtils.h" />
+    <ClInclude Include="PacketClient\FriendList\FriendList.h" />
+    <ClInclude Include="PacketClient\GuiUtils.h" />
+    <ClInclude Include="PacketClient\ImmediateGui.h" />
+    <ClInclude Include="PacketClient\Loader.h" />
+    <ClInclude Include="PacketClient\Menu\ClickGui.h" />
+    <ClInclude Include="PacketClient\Menu\HudEditor.h" />
+    <ClInclude Include="PacketClient\Menu\TabGui.h" />
+    <ClInclude Include="PacketClient\Module\ModuleManager.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Aimbot.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Animations.h" />
+    <ClInclude Include="PacketClient\Module\Modules\AntiBot.h" />
+    <ClInclude Include="PacketClient\Module\Modules\AntiImmobile.h" />
+    <ClInclude Include="PacketClient\Module\Modules\AntiVoid.h" />
+    <ClInclude Include="PacketClient\Module\Modules\AutoClicker.h" />
+    <ClInclude Include="PacketClient\Module\Modules\AutoTotem.h" />
+    <ClInclude Include="PacketClient\Module\Modules\BlockESP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\BlockOutline.h" />
+    <ClInclude Include="PacketClient\Module\Modules\BreadCrumbs.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ClickTP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\CustomSky.h" />
+    <ClInclude Include="PacketClient\Module\Modules\FastPlace.h" />
+    <ClInclude Include="PacketClient\Module\Modules\FastStop.h" />
+    <ClInclude Include="PacketClient\Module\Modules\HackerDetector.h" />
+    <ClInclude Include="PacketClient\Module\Modules\HudEditorMod.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ItemTP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Jesus.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Notifications.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Packet.h" />
+    <ClInclude Include="PacketClient\Module\Modules\PacketLogger.h" />
+    <ClInclude Include="PacketClient\Module\Modules\PlayerList.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Sneak.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Spammer.h" />
+    <ClInclude Include="PacketClient\Module\Modules\SpawnTP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Sprint.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Speed.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Blink.h" />
+    <ClInclude Include="PacketClient\Module\Modules\CameraMod.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ChatBypass.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ChestAura.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ChestESP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ChestStealer.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ClickGuiMod.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Criticals.h" />
+    <ClInclude Include="PacketClient\Module\Modules\CrystalAura.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Derp.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Disabler.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ESP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Freecam.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Freelook.h" />
+    <ClInclude Include="PacketClient\Module\Modules\FreeTP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Breaker.h" />
+    <ClInclude Include="PacketClient\Module\Modules\FullBright.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Flight.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Hitbox.h" />
+    <ClInclude Include="PacketClient\Module\Modules\HiveFly.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ArrayList.h" />
+    <ClInclude Include="PacketClient\Module\Modules\ExtendedBlockReach.h" />
+    <ClInclude Include="PacketClient\Module\Modules\HudModule.h" />
+    <ClInclude Include="PacketClient\Module\Modules\InstaBreak.h" />
+    <ClInclude Include="PacketClient\Module\Modules\InvManager.h" />
+    <ClInclude Include="PacketClient\Module\Modules\InventoryMove.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Killaura.h" />
+    <ClInclude Include="PacketClient\Module\Modules\LongJump.h" />
+    <ClInclude Include="PacketClient\Module\Modules\MidClick.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Module.h" />
+    <ClInclude Include="PacketClient\Module\Modules\NameTags.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Nbt.h" />
+    <ClInclude Include="PacketClient\Module\Modules\NoFall.h" />
+    <ClInclude Include="PacketClient\Module\Modules\NoFriends.h" />
+    <ClInclude Include="PacketClient\Module\Modules\NoSlow.h" />
+    <ClInclude Include="PacketClient\Module\Modules\NoSwing.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Nuker.h" />
+    <ClInclude Include="PacketClient\Module\Modules\PacketClientLogger.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Phase.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Radar.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Reach.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Safewalk.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Scaffold.h" />
+    <ClInclude Include="PacketClient\Module\Modules\StackableItem.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Step.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TargetHUD.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TargetStrafeOld.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Teams.h" />
+    <ClInclude Include="PacketClient\Module\Modules\BlockReach.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TestModule.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Timer.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TimeChanger.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TPAura.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TriggerBot.h" />
+    <ClInclude Include="PacketClient\Module\Modules\VanillaPlus.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Velocity.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Watermark.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Waypoints.h" />
+    <ClInclude Include="PacketClient\Module\Modules\XP.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Xray.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Zoom.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Spider.h" />
+    <ClInclude Include="PacketClient\Module\Modules\PacketClient.h" />
+    <ClInclude Include="PacketClient\Module\Modules\TargetStrafe.h" />
+    <ClInclude Include="PacketClient\Module\Modules\Switcher.h" />
+    <ClInclude Include="PacketClient\Module\Modules\KBFly.h" />
+    <ClInclude Include="PacketClient\Module\Modules\FallSave.h" />
+    <ClInclude Include="PacketClient\Module\Modules\NoJumpDelay.h" />
+    <ClInclude Include="PacketClient\Scripting\Functions\PacketClientFunctions.h" />
+    <ClInclude Include="include\atlrx.h" />
+    <ClInclude Include="include\chakra\ChakraCommon.h" />
+    <ClInclude Include="include\chakra\ChakraCommonWindows.h" />
+    <ClInclude Include="include\chakra\ChakraCore.h" />
+    <ClInclude Include="include\chakra\ChakraCoreWindows.h" />
+    <ClInclude Include="include\chakra\ChakraDebug.h" />
+    <ClInclude Include="include\d3dx11.h" />
+    <ClInclude Include="include\d3dx11async.h" />
+    <ClInclude Include="include\d3dx11core.h" />
+    <ClInclude Include="include\d3dx11effect.h" />
+    <ClInclude Include="include\imgui\examples\imgui_impl_dx11.h" />
+    <ClInclude Include="include\imgui\examples\imgui_impl_win32.h" />
+    <ClInclude Include="include\imgui\imconfig.h" />
+    <ClInclude Include="include\imgui\imgui.h" />
+    <ClInclude Include="include\imgui\imgui_internal.h" />
+    <ClInclude Include="include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="include\imgui\imstb_textedit.h" />
+    <ClInclude Include="include\imgui\imstb_truetype.h" />
+    <ClInclude Include="include\imgui\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="include\imgui\misc\single_file\imgui_single_file.h" />
+    <ClInclude Include="include\RegExp.h" />
+    <ClInclude Include="include\StringProcess.h" />
+    <ClInclude Include="include\WinHttpClient.h" />
+    <ClInclude Include="Memory\GameData.h" />
+    <ClInclude Include="Memory\Hooks.h" />
+    <ClInclude Include="Memory\MinHook.h" />
+    <ClInclude Include="Memory\SlimMem.h" />
+    <ClInclude Include="SDK\CBlockLegacy.h" />
+    <ClInclude Include="SDK\CCamera.h" />
+    <ClInclude Include="SDK\CChestBlockActor.h" />
+    <ClInclude Include="SDK\CClientInstance.h" />
+    <ClInclude Include="SDK\CClientInstanceScreenModel.h" />
+    <ClInclude Include="SDK\CComplexInventoryTransaction.h" />
+    <ClInclude Include="SDK\CEntity.h" />
+    <ClInclude Include="SDK\CEntityList.h" />
+    <ClInclude Include="SDK\CGameMode.h" />
+    <ClInclude Include="SDK\CGameSettingsInput.h" />
+    <ClInclude Include="SDK\CHIDController.h" />
+    <ClInclude Include="SDK\CImageBuffer.h" />
+    <ClInclude Include="SDK\CInventory.h" />
+    <ClInclude Include="SDK\CInventoryTransaction.h" />
+    <ClInclude Include="SDK\CItem.h" />
+    <ClInclude Include="SDK\CLoopbackPacketClientSender.h" />
+    <ClInclude Include="SDK\CLoopbackPacketSender.h" />
+    <ClInclude Include="SDK\CMinecraftUIRenderContext.h" />
+    <ClInclude Include="SDK\CMoveInputHandler.h" />
+    <ClInclude Include="SDK\CPacket.h" />
+    <ClInclude Include="SDK\CPacketClient.h" />
+    <ClInclude Include="SDK\CRakNetInstance.h" />
+    <ClInclude Include="SDK\CUIScene.h" />
+    <ClInclude Include="SDK\MatrixStack.h" />
+    <ClInclude Include="SDK\MojangsonToken.h" />
+    <ClInclude Include="SDK\Tag.h" />
+    <ClInclude Include="SDK\Tessellator.h" />
+    <ClInclude Include="SDK\TextHolder.h" />
+    <ClInclude Include="SDK\Weather.h" />
+    <ClInclude Include="Utils\ChakraHelper.h" />
+    <ClInclude Include="Utils\DllHelper.h" />
+    <ClInclude Include="Utils\HMath.h" />
+    <ClInclude Include="Utils\Json.hpp" />
+    <ClInclude Include="Utils\keys.h" />
+    <ClInclude Include="Utils\Logger.h" />
+    <ClInclude Include="Utils\SkinUtil.h" />
+    <ClInclude Include="Utils\Target.h" />
+    <ClInclude Include="Utils\TextFormat.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <ClInclude Include="Utils\VoxelIntersector.h" />
+    <ClInclude Include="Utils\xorstr.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.XAudio2.Redist.1.2.8\build\native\Microsoft.XAudio2.Redist.targets" Condition="Exists('packages\Microsoft.XAudio2.Redist.1.2.8\build\native\Microsoft.XAudio2.Redist.targets')" />
+    <Import Project="packages\directxtk_desktop_2017.2021.11.8.1\build\native\directxtk_desktop_2017.targets" Condition="Exists('packages\directxtk_desktop_2017.2021.11.8.1\build\native\directxtk_desktop_2017.targets')" />
+  </ImportGroup>
+</Project>
