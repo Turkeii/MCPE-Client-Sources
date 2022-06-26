@@ -14,7 +14,7 @@ Source codes of MCPE Clients!
     Lunicornia (Skidded Horion)
     Octo (shit)
     Surge (Toxic owners, multi-purpose.)
-    Packet 1.16.201 & V2 (minigames & paying people)
+    Packet 1.16.201 & V2 (minigames, paying people and talking shit)
     Plasmic (Legit)
     Moon (External, Blatant)
     Japan (Bad skid)
