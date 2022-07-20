@@ -20,5 +20,6 @@ Source codes of MCPE Clients!
     Japan (Bad skid)
     Victory+ (Crappy CPVP client)
     NG Client (NickTros's horion fork)
+    Xalyfi Client(Worst BadMan Paste out)
 # Notice
 Skidding (stealing code) is not a good thing to do. There is nothing stopping you from stealing code without crediting the original developers. But it is a very bad thing to do and you can get exposed very quickly. Some clients do not want you to steal any of there code credit or not.
