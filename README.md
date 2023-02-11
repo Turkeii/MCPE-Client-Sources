@@ -7,8 +7,9 @@
 
 Source codes of MCPE Clients!
 
-    Badman (Mnigames & Anarchy)
+    Badman (Minigames & Anarchy)
     DaDrip (Anarchy)
+    FatalityClient (another packet skid)
     Fadeaway (minigames)
 	Ghost Client (Minigames & Surge's best friend)
     Lunicornia (Skidded Horion)
